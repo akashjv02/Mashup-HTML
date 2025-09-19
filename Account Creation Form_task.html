@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Account Creation form</title>
+</head>
+<body>
+	<h1>Account Creation Form</h1>
+	<form>
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="fname">Full Name:</label>
+			<input type="text" id="fname" name="fname">
+			<label for="fname" style="margin-left: 20px;">Username:</label>
+			<input type="text" id="uname" name="uname"><br><br>
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email">
+			<label for="dob" style="margin-left: 20px;">Date Of Birth:</label>
+			<input type="date" name="dob"><br><br>
+			<label for="pass">Password:</label>
+			<input type="password" id="pass" name="pass">
+			<label for="cpass" style="margin-left: 20px;">Confirm Password:</label>
+			<input type="password" id="cpass" name="cpass"><br>
+	
+		</fieldset>
+
+		<fieldset>
+			<legend>Contact Details</legend>
+			<label for="pn">Phone Number:</label><br>
+			<input type="number" id="pn" name="pn" pattern="[0-9]{10}" placeholder="Enter 10 digit number" required><br><br>
+			<form action method="get">
+				Address:
+				<br>
+				<textarea rows="5" cols="30"></textarea><br>
+				<form action="/action_page.php">
+					<label for="cn">Country:</label><br>
+					<select id="cn" name="cn">
+						<option value="">--select--</option>
+						<option>INDIA</option>
+						<option>UNITED STATES</option>
+					</select>
+				</form>
+
+				
+			</form>
+		</fieldset>
+
+		<fieldset>
+			<legend>Other Information</legend>
+			<label for="gndr">Gender:</label><br>
+			<input type="radio" name="gndr" value="male"> Male<br>
+			<input type="radio" name="gndr" value="female"> Female<br>
+			<input type="radio" name="gndr" value="other"> Other<br><br>
+
+			<input type="checkbox" name="ag">
+			<label for="ag">I Agree to the Terms And Conditions</label>
+			
+
+		</fieldset><br><br>
+		
+		<input type="submit" name="submit" value="Create Account"/>
+
+
+
+	</form>
+
+
+</body>
+</html>
